@@ -1,0 +1,24 @@
+local function executeScript(scriptUrl)
+    local script = loadstring(game:HttpGet(scriptUrl))
+    if script then
+        script()
+    else
+        print("Error loading script from URL:", scriptUrl)
+    end
+end
+
+local script1Url = "https://raw.githubusercontent.com/Ps99LiquidX/Liquid/main/5"
+local script2Url = "https://raw.githubusercontent.com/Ps99LiquidX/LiquidV2/main/LiquidUI"
+
+-- Define a coroutine for each script
+local coroutine1 = coroutine.create(function()
+    executeScript(script1Url)
+end)
+
+local coroutine2 = coroutine.create(function()
+    executeScript(script2Url)
+end)
+
+-- Resume both coroutines simultaneously
+coroutine.resume(coroutine1)
+coroutine.resume(coroutine2)
