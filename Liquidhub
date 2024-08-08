@@ -8,7 +8,7 @@ local function executeScript(scriptUrl)
 end
 
 local script1Url = "https://raw.githubusercontent.com/Ps99LiquidX/Liquid/main/3"
-local script2Url = "https://raw.githubusercontent.com/Ps99LiquidX/LiquidV2/main/LiquidUI"
+local script2Url = "https://raw.githubusercontent.com/Ps99LiquidX/LiquidXhub/main/OrionLib"
 
 -- Define a coroutine for each script
 local coroutine1 = coroutine.create(function()
