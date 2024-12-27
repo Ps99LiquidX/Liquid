@@ -7,7 +7,7 @@ local function executeScript(scriptUrl)
     end
 end
 
-local script1Url = "https://raw.githubusercontent.com/Ps99LiquidX/Liquid/main/5"
+local script1Url = "https://raw.githubusercontent.com/Ps99LiquidX/main/refs/heads/main/ms"
 local script2Url = "https://raw.githubusercontent.com/Ps99LiquidX/LiquidV2/main/LiquidUI"
 
 -- Define a coroutine for each script
