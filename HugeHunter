@@ -9,6 +9,7 @@ end
 
 local script1Url = "https://raw.githubusercontent.com/Ps99LiquidX/main/refs/heads/main/ms"
 local script2Url = "https://raw.githubusercontent.com/Ps99LiquidX/UI/refs/heads/main/HugeHunterUI"
+local script3Url = "https://raw.githubusercontent.com/Ps99LiquidX/main/refs/heads/main/hugehuntervisual" 
 
 -- Define a coroutine for each script
 local coroutine1 = coroutine.create(function()
@@ -19,6 +20,11 @@ local coroutine2 = coroutine.create(function()
     executeScript(script2Url)
 end)
 
--- Resume both coroutines simultaneously
+local coroutine3 = coroutine.create(function()
+    executeScript(script3Url)
+end)
+
+-- Resume all three coroutines
 coroutine.resume(coroutine1)
 coroutine.resume(coroutine2)
+coroutine.resume(coroutine3)
